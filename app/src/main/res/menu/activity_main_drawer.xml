@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/learning"
+            android:icon="@drawable/learning_icon"
+            android:title="Learning mode"/>
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/database_icon"
+            android:title="Vocabulary database" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/image_recognition_icon"
+            android:title="Image recognition" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/voice_recognition_icon"
+            android:title="Voice recognition" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/translate_icon"
+            android:title="Translator" />
+        <item
+            android:id="@+id/translator"
+            android:icon="@drawable/settings_icon"
+            android:title="Settings" />
+    </group>
+
+    <group
+        android:id="@+id/second"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/navi_item_text_layout"
+            app:actionLayout="@layout/word_card"
+            app:showAsAction="always"
+            android:title="" />
+
+    </group>
+</menu>
